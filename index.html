@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>űrlap</title>
+</head>
+<body>
+    <main>
+        <header><h1>Űrlap</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Menü</a></li>
+                <li><a href="index.html">Menü</a></li>
+                <li><a href="index.html">Menü</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Személyes Adatok</legend>
+                    <div class="block">
+                    <label for="nev">Név</label>
+                    <input type="text" name="nev" id="nev" placeholder="Vezetéknév Keresztnév">
+                    </div>   
+                    <div class="block">
+                    <label for="psw">Jelszó</label>
+                    <input type="password" name="psw" id="psw">
+                    </div>
+                    <div class="block">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nem</legend>
+                    <label for="ffi">Férfi</label> <input type="radio" name="nem" id="ffi"/>
+                    <label for="no">Nő</label>  <input type="radio" name="nem" id="no"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Életkor</legend>
+                    <label for="kor">Életkor (1-100)</label> <input type="number" name="elet" id="kor"  min="1" max="100"> <br>
+                    <label for="szuli">Születési Időpont</label> <input type="date" name="elet" id="szuli">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hobbi - Többet is kijelölhetsz</legend>
+                    <label for="mod">Modellezés</label> <input type="checkbox" name="hobbi" id="mod"/>
+                    <label for="foto">Fotózás</label>  <input type="checkbox" name="hobbi" id="foto"/>
+                    <label for="tura">Túrázás</label>  <input type="checkbox" name="hobbi" id="tura"/>
+                </fieldset>
+
+                
+
+                <div class="block">
+                    <input type="submit" value="send">
+                </div>
+            </form>            
+
+        </article>
+        <footer><p>Czeczei Bence</p></footer>
+    </main>
+</body>
+</html>

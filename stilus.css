@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+main, header, nav, article, footer {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    flex: 0 0 100%;
+}
+
+nav {
+    flex: 0 0 200px;
+}
+
+article {
+    flex: 1 1 auto;
+}
+
+.block {
+    display: flex;
+}
+
+.block label{
+    flex: 0 0 70px;
+    text-align: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-width:700px) {
+    nav {
+        flex: 0 0 100%;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .block {
+        flex-direction: column;
+    }
+
+    .block label{
+        flex: 0 0 100%;
+        text-align: left;
+        padding-top: 15px;
+    }
+    
+}
